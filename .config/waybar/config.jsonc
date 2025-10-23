@@ -41,7 +41,7 @@
 		"format-ethernet": "",
 		"format-linked": "",
 		"format-disconnected": "-",
-		"format-alt": "{ifname}: {ipaddr}/{cidr} {gwaddr}"
+		"format-alt": "{essid} | {ifname}: {ipaddr}/{cidr} {gwaddr}"
 	},
 	"pulseaudio": {
 		"format": "{icon} {volume}% {format_source}",
