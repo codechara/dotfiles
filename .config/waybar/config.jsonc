@@ -1,0 +1,64 @@
+{
+	"position": "top",
+	"height": 30,
+	"modules-left": [
+		"custom/overview",
+		"niri/workspaces"
+	],
+	"modules-center": [
+		"clock"
+	],
+	"modules-right": [
+		"tray",
+		"niri/language",
+		"pulseaudio",
+		"network",
+		"battery"
+	],
+
+	"custom/overview": {
+		"format": "Overview",
+		"on-click": "niri msg action toggle-overview"
+	},
+	"niri/language": {
+		"format-ru": "ru",
+		"format-en": "en"
+	},
+	"battery": {
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+		"format-full": "{icon}",
+		"format-charging": " {capacity}%",
+		"format-plugged": " {capacity}%",
+		"format-alt": "{time} {icon}",
+		"format-icons": ["", "", "", "", ""]
+	},
+	"network": {
+		"format": " {signalStrength}%",
+		"format-ethernet": "",
+		"format-linked": "",
+		"format-disconnected": "-",
+		"format-alt": "{essid} | {ifname}: {ipaddr}/{cidr} {gwaddr}"
+	},
+	"pulseaudio": {
+		"format": "{icon} {volume}% {format_source}",
+		"format-bluetooth": " {volume}% {format_source}",
+		"format-bluetooth-muted": " {format_source}",
+		"format-muted": " {format_source}",
+		"format-source": " {volume}%",
+		"format-source-muted": "",
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"default": ["", "", ""]
+		}
+	}
+}
+

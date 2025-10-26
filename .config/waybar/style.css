@@ -1,0 +1,33 @@
+* {
+	font-family: "Noto Sans Mono", "Font Awesome 6 Free", "Font Awesome 6 Brands";
+	font-size: 14px;
+
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+window#waybar {
+	background-color: #190a21;
+	color: #ecccff;
+}
+
+button {
+	border: none;
+	border-radius: 0;
+	color: #a786ba;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+/* someday i fix issue with button and touchscreen */
+
+/*button:hover {
+	color: #a786ba;
+	background-color: #190a21;
+}
+
+button:focus {
+	background-color: #000;
+	color: #a786ba;
+}*/
+

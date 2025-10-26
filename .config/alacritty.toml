@@ -1,0 +1,7 @@
+[general]
+live_config_reload = true
+
+[colors]
+primary.background = "#12001c"
+primary.foreground = "#ecccff"
+

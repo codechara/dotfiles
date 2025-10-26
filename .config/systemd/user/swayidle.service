@@ -1,0 +1,9 @@
+[Unit]
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/swayidle -w before-sleep "swaylock -C /home/chara/.config/sway/swaylock.config"
+Restart=on-failure
+
